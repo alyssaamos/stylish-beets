@@ -1,5 +1,30 @@
 html {
+  box-sizing: border-box;
   background-color: #c9b5ab;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #c9b5ab;
+  line-height: 1.5;
+  font-family: "PT Serif", serif;
+  font-size: 1.125rem;
+  font-weight: normal;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+h1, .tags, nav a {
+  font-family: "PT Sans", sans-serif;
+}
+
+h1, h2 {
+  color: #222;
 }
 
 h1 {
@@ -7,8 +32,9 @@ h1 {
   color: #3f1822;
   font-size: 1.5rem;
 }
+
 nav {
-  font family: "PT Sans", sans-serif;
+  font-family: "PT Sans", sans-serif;
   text-decoration: none;
   color: #8f2440;
   font-size: 1.125rem;
@@ -18,21 +44,61 @@ nav ol {
   list-style-type: none;
 }
 
+aside ul, cite, footer {
+  font-size: .8rem;
+}
+
 a {
-  tect-decoration: none;
+  text-decoration: none;
   color: #8f2440;
+}
+
+a:hover {
+  color: #3f1622;
+  text-decoration: underline;
+}
+
+blockquote p {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+section p:first-child {
+  font-weight: bold;
+}
+
+figure + p {
+  font-weight: bold;
 }
 
 figcaption {
   font-family: "PT Serif", serif;
   font-style: italic;
   text-align: center;
-  font-size: 0.8rem;
   color: #222;
 }
 
-main figure + p {
-  font-family: "PT Serif", serif;
-  font-style: bold;
-  font-size: 1.125rem
+img {
+  width: 100%;
+  height: auto;
+}
+
+section ol {
+  list-style-type: lower-greek;
+}
+
+dt {
+  font-weight: bold;
+}
+
+.no-bold {
+  font-weight: normal;
+}
+
+aside ul {
+  list-style-type: circle;
+}
+
+p {
+  font-size: 1rem;
 }
